@@ -1,0 +1,674 @@
+
+
+@font-face {
+    font-family: 'Retro';
+    src: url(img/RETROTECH.ttf);
+}
+
+@font-face {
+    font-family: 'Robot';
+    src: url(img/RobotoMono-VariableFont_wght.ttf);
+}  
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    color: aliceblue;
+    height: 100vh;
+    
+
+
+}
+
+/* FORMULARIO */
+p{
+    text-align: center;
+    font-family: "Retro";
+    font-size: 4.5em;
+    padding-bottom: 50px;
+}
+
+
+h3{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Robot";
+    margin-bottom: 20px;
+}
+
+h5{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div{
+    width: 100%;
+    min-height: 300vh;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #010013ec; 
+}
+
+ legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+} 
+
+fieldset{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(230, 219, 213);
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+input{
+    /* con esto se cambian algunas cajas de relleno */
+    min-height: 3vh;
+    border-color: purple;
+    background-color: #010013ec;
+    color: rgba(240, 248, 255, 0.767);
+    margin: 0px 15px 15px 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+textarea{
+    border-color: purple;
+    background-color: #010013ec;
+    color: rgba(240, 248, 255, 0.767);
+    min-width: 30vw;
+    height: 15vh;
+    margin-top: 5px;
+}
+
+#simple{
+    min-height: 3vh;
+    border-color: purple;
+    background-color: #010013ec;
+    color: rgba(240, 248, 255, 0.767);
+    margin: 0px 15px 15px 15px;
+}
+
+#multiple{
+    width: 10vw;
+    min-height: 10vh;
+    border-color: purple;
+    background-color: #010013ec;
+    color: purple;
+    margin: 0px 15px 15px 15px;
+    font-size: 1em;
+}
+
+#multiple option{
+    color: white;
+}
+
+.Cdatos{
+    width: 40vw;
+    min-height: 3vh;
+}
+
+.Allado{
+    width: 20vw;
+    min-height: 3vh;
+}
+
+/* esto es para la informacion de pago */
+#imgp{
+    width: 3%;
+    height: 4%;
+    margin-bottom: auto;
+}
+
+fieldset a{
+    color: purple;
+}
+
+.boton{
+    margin-top: 20px;
+    min-width: 8vw;
+    height: 8%;
+}
+
+footer.RRSS {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #010013ec; 
+    padding: 10px 0; /* Espacio alrededor del contenido */
+}
+
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10 100px 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: white;
+    font-size: 1.8em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: rgb(137, 66, 188);
+}
+
+
+/* Estilos para teléfono en posición vertical */
+@media screen and (max-width: 576px){
+
+/* Menu */
+
+
+li{
+    padding: 2vw;
+    margin-top: -4.5vw; 
+    font-size: 0.7em;
+}
+
+
+.ul2>li{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(234, 45, 255);
+}
+
+
+/* Medidad del Logo */
+.logo2{
+    margin-top: 10px;
+}
+
+
+
+ /* FORMULARIO */
+    div{
+        width: 50%;
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    p{
+        font-size: 1em;
+        padding-bottom: 20px;
+    }
+
+    h3{
+        font-size: 0.5em;
+        margin-bottom: 10px;
+    }
+
+    legend{
+        font-size: 0.9em;
+    } 
+
+    fieldset{
+        font-size: 0.6em;
+        padding: 8%;
+    }
+
+    .Cdatos{
+        width: 25vw;
+        margin-top: 5%;
+    }
+    
+    .Allado{
+        width: 25vw;
+        margin-top: 5%;
+    }
+
+    input{
+        /* con esto se cambian algunas cajas de relleno */
+        width: 15vw;
+        min-height: 1vh;
+        margin-top: 5%;
+        font-size: 0.7em;
+        margin: 10px;
+    }
+
+    #simple{
+        min-height: 0.2vh;
+        margin: 10px;
+    }
+    
+    textarea{
+        height: 10vh;
+    }
+
+    #imgp{
+        width: 20%;
+        height: 4%;
+        margin-left: 50%;
+    }
+    
+    .boton{
+        margin-top: 1px;
+        min-width: 10vw;
+        height: 15%;
+    }
+} 
+
+/* movil horizontal */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    li{
+        padding: 2vw;
+        margin-top: -4.5vw; 
+        font-size: 0.7em;
+    }
+    
+    
+    .ul2>li{
+        width: 100%;
+        padding: 5px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border: 2px solid rgb(234, 45, 255);
+    }
+    
+    
+    /* Medidad del Logo */
+    .logo2{
+            margin-top: 5px;
+            margin-right: 80%;
+            width: 13%;
+            height: 13%;
+        
+    }
+    
+    
+    
+     /* FORMULARIO */
+        div{
+            width: 50%;
+            margin-top: 110px;
+            padding: 15px;
+        }
+    
+        p{
+            font-size: 1em;
+            padding-bottom: 20px;
+        }
+    
+        h3{
+            font-size: 0.5em;
+            margin-bottom: 10px;
+        }
+    
+        legend{
+            font-size: 0.9em;
+        } 
+    
+        fieldset{
+            font-size: 0.6em;
+            padding: 8%;
+        }
+    
+        .Cdatos{
+            width: 25vw;
+            margin-top: 5%;
+            height: 1vh;
+        }
+        
+        .Allado{
+            width: 25vw;
+            margin-top: 5%;
+            height: 1vh;
+        }
+    
+        input{
+            /* con esto se cambian algunas cajas de relleno */
+            width: 15vw;
+            min-height: 1vh;
+            margin-top: 5%;
+            font-size: 0.7em;
+            margin: 10px;
+        }
+    
+        #simple{
+            min-height: 0.2vh;
+            margin: 10px;
+        }
+        
+        textarea{
+            height: 10vh;
+            min-width: 40vw;
+        }
+    
+        #imgp{
+            width: 10%;
+            height: 4%;
+        }
+        
+        .boton{
+            margin-top: 1px;
+            min-width: 10vw;
+            height: 15%;
+        }
+   
+}
+
+/* tablet vertical */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    li{
+        padding: 2vw;
+        margin-top: -4.5vw; 
+        font-size: 1em;
+    }
+    
+    
+    .ul2>li{
+        width: 100%;
+        padding: 5px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border: 2px solid rgb(234, 45, 255);
+    }
+    
+    
+    /* Medidad del Logo */
+    .logo2{
+            margin-top: 5px;
+            margin-right: 80%;
+            width: 18%;
+            height: 18%;
+        
+    }
+    
+    
+    
+     /* FORMULARIO */
+        div{
+            width: 50%;
+            margin-top: 110px;
+            padding: 15px;
+        }
+    
+        p{
+            font-size: 1em;
+            padding-bottom: 20px;
+        }
+    
+        h3{
+            font-size: 0.5em;
+            margin-bottom: 10px;
+        }
+    
+        legend{
+            font-size: 0.9em;
+        } 
+    
+        fieldset{
+            font-size: 0.6em;
+            padding: 8%;
+        }
+    
+        .Cdatos{
+            width: 25vw;
+            margin-top: 5%;
+            min-height: 2vh;
+        }
+        
+        .Allado{
+            width: 25vw;
+            margin-top: 5%;
+            min-height: 2vh;
+        }
+    
+        input{
+            /* con esto se cambian algunas cajas de relleno */
+            width: 15vw;
+            min-height: 1vh;
+            margin-top: 5%;
+            font-size: 0.7em;
+            margin: 10px;
+        }
+    
+        #simple{
+            min-height: 0.2vh;
+            margin: 10px;
+        }
+        
+        textarea{
+            height: 10vh;
+            min-width: 40vw;
+        }
+    
+        #imgp{
+            width: 10%;
+            height: 4%;
+        }
+        
+        .boton{
+            margin-top: 1px;
+            min-width: 10vw;
+            height: 15%;
+        }
+
+}
+
+
+/* tablet horizontal */
+
+    @media screen and (min-width: 769px) and (max-width: 1300px) {
+
+        li{
+            padding: 2vw;
+            margin-top: -4.5vw; 
+            font-size: 1em;
+        }
+        
+        
+        .ul2>li{
+            width: 100%;
+            padding: 5px;
+            margin-top: 15px;
+            margin-right: 10px;
+            border: 2px solid rgb(234, 45, 255);
+        }
+        
+        
+        /* Medidad del Logo */
+        .logo2{
+                margin-top: 5px;
+                margin-right: 80%;
+                width: 15%;
+                height: 15%;
+            
+        }
+        
+        
+        
+         /* FORMULARIO */
+            div{
+                width: 50%;
+                margin-top: 100px;
+                padding: 10px;
+            }
+        
+            p{
+                font-size: 2em;
+                padding-bottom: 20px;
+            }
+        
+            h3{
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+        
+            legend{
+                font-size: 1em;
+            } 
+        
+            fieldset{
+                font-size: 0.8em;
+                padding: 4%;
+            }
+        
+            .Cdatos{
+                width: 25vw;
+                margin-top: 5%;
+                min-height: 2.5vh;
+            }
+            
+            .Allado{
+                width: 10vw;
+                margin-top: 5%;
+                min-height: 2.5vh;
+            }
+        
+            input{
+                /* con esto se cambian algunas cajas de relleno */
+                width: 15vw;
+                min-height: 1vh;
+                margin-top: 5%;
+                font-size: 0.7em;
+                margin: 10px;
+            }
+        
+            #simple{
+                min-height: 0.2vh;
+                margin: 10px;
+            }
+            
+            textarea{
+                height: 10vh;
+                min-width: 40vw;
+            }
+        
+            #imgp{
+                width: 10%;
+                height: 4%;
+            }
+            
+            .boton{
+                margin-top: 1px;
+                min-width: 10vw;
+                height: 15%;
+            }
+    
+    }    
+
+
+
+/* @media screen and (min-width: 1300px) { */
+
+    @media screen and (min-width: 1300px) {
+
+        li{
+            padding: 2vw;
+            margin-top: -2vw; 
+            font-size: 1em;
+        }
+        
+        
+        .ul2>li{
+            width: 100%;
+            padding: 20px;
+            margin-top: 45px;
+            margin-right: 10px;
+            border: 2px solid rgb(234, 45, 255);
+        }
+        
+        
+        
+         /* FORMULARIO */
+            div{
+                width: 50%;
+                margin-top: 110px;
+                padding: 15px;
+            }
+        
+            p{
+                font-size: 2em;
+                padding-bottom: 20px;
+            }
+        
+            h3{
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+        
+            legend{
+                font-size: 1em;
+            } 
+        
+            fieldset{
+                font-size: 1em;
+                padding: 5%;
+            }
+        
+            .Cdatos{
+                width: 20vw;
+                margin-top: 5%;
+                min-height: 3vh;
+            }
+            
+            .Allado{
+                width: 13vw;
+                margin-top: 5%;
+                min-height: 3vh;
+            }
+        
+            input{
+                /* con esto se cambian algunas cajas de relleno */
+                width: 10vw;
+                min-height: 3vh;
+                margin-top: 5%;
+                font-size: 0.7em;
+                margin: 10px;
+            }
+        
+            #simple{
+                min-height: 0.2vh;
+                margin: 10px;
+            }
+            
+            textarea{
+                height: 10vh;
+                min-width: 40vw;
+            }
+        
+            #imgp{
+                width: 10%;
+                height: 4%;
+            }
+            
+            .boton{
+                margin-top: 1px;
+                min-width: 10vw;
+                height: 15%;
+            }
+    
+    }    

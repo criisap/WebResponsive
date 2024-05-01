@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0f7303ebba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="commonstyle.css">
+    <link rel="stylesheet" href="formulario.css">
+    <title>formulario</title>
+</head>
+<body>
+    <nav>
+        <p class="logo"><img class="logo2" src="img/logo.png" alt=""></p>
+    
+        <ul class="ul1">
+            <li><a href="index.html">Home</a></li>
+            <li class="QuieneS"><a href="quienessomos.html">Quienes somos</a>
+                <ul class="ul2">
+                    <li class="Noticias">Noticias</li>
+                </ul>
+            </li>
+            <li class="AreaA"><a href="publicaciones.html">Áreas de actuación</a>
+                <ul class="ul2">
+                    <li class="Publicaciones">Publicaciones</li>
+                </ul>
+            </li>
+            <li class="Cto"><a href="Contacto.html">Contacto</a>
+                <ul class="ul2">
+                    <li class="Ubicacion">Ubicación</li>
+                </ul>
+            </li>
+            <li><a href="formulario.html"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </nav>
+
+   <div class="formulario">
+    <p>FINALIZAR COMPRA</p>
+    <h3>Rellene los campos obligatorios y envíe este formulario para completar su pedido.</h3>
+    <br>
+    <form action="mailto:cristinavillahermosa32@gmail.com" method="post" name="formulario" target="_blank" autocomplete="on">
+        <fieldset>
+        <legend>Registro de nuevo usuario </legend>
+        Nombre: <input class="Allado" type="text" name="nombre" placeholder="Indique su nombre" autofocus required>
+        Apellidos:<input class="Allado" type="text" name="apellidos" placeholder="Indique sus dos apellidos" spellcheck="true" required>
+        <br>
+        <br>
+        Fecha de nacimiento: <input type="date" name="" id="">
+        <br>
+        <input class="sexo" type="radio" name="sexo" value="M">Mujer
+        <br>
+        <input class="sexo" type="radio" name="sexo" value="H">Hombre
+        <br>
+        <br>
+        <!-- <input type="search" name="busqueda" size="50" placeholder="búsqueda" disabled>
+        <br>
+        <br> -->
+        Email: <input class="Cdatos" type="email" name="email" placeholder="Indique su correo electrónico" required>
+        <br>
+        <br> 
+        Contraseña: <input class="Allado" type="password" name="contraseña" placeholder="Introduce tu contraseña">
+        <br>
+        Confirmar contraseña: <input class="Allado" type="password" name="contraseña" placeholder="Introduce tu contraseña">
+        <br>
+        <br>
+        <input type="hidden" name="oculto" placeholder="NO SE MUESTRA AL USUARIO">
+        </fieldset>
+        
+        <br>
+        <br>
+        
+        <fieldset>
+        <legend>Detalles del pedido</legend>
+        Plataforma del videojuego:
+        <select name="libros" id="simple">
+            <option value="PC">PC</option>
+            <option value="PS4">PS4</option>
+            <option value="Xbox">Xbox</option>
+            <option value="One">One</option>
+            <option value="Switch">Switch</option>
+            <option value="Otro">Otro</option>
+        </select>
+        <br>
+        Cantidad: <input type="number" name="cantidad" placeholder="Num" min="1" max="80">
+        <br>
+        Edición:
+        <input type="text" list="Edición">
+        <datalist id="Edición">
+            <option value="1">Estándar</option>
+            <option value="2">Coleccionista</option>
+            <option value="3">Deluxe</option>
+            <option value="4">Prime</option>
+        </datalist>
+        <br>
+        <br>
+        ¿Enviar como regalo? 
+        <br>
+        <input type="checkbox" name="informacion" id="">SI
+        <br>
+        <input type="checkbox" name="informacion" id="" checked>NO
+        <br>
+        <br>
+        <hr>
+        <br>
+        ¿Te gustaría personalizar la portada de tu videojuego?
+        <br>
+        <input type="checkbox" name="informacion" id="">SI
+        <br>
+        <input type="checkbox" name="informacion" id="">NO
+        <br>
+        <br>
+        <h5>En el caso de querer personalizar la portada de su videojuego debe de elegir un color, adjuntar una imagen de referencia e indicar en las especificaciones como le gustaría que fuese su portada</h5>
+        <br>
+        Elige un color: <input type="color">
+        <br>
+        <input id="ADar" type="file" value="adjuntar archivos" accept=".pdf, .png" multiple>
+        <br>
+        <br>
+        Instrucciones especiales: 
+        <br>
+        <br>
+        <textarea name="texto extenso" id="" spellcheck="true"></textarea>
+        <br>
+        <br>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Información de pago</legend>
+            Método de pago: 
+            <br>
+            <input type="checkbox" name="visa" checked>
+                <input id="imgp" type="image" src="img/visa.png" readonly>
+
+            <input type="checkbox" name="Paypal">
+                <input id="imgp" type="image" src="img/tarjeta.png" readonly>
+
+            <input type="checkbox" name="Transferencia">
+                <input id="imgp" type="image" src="img/transferencia-movil.png" readonly>
+
+            <input type="checkbox" name="Express">
+                <input id="imgp" type="image" src="img/american-express.png" readonly>
+
+            <br>
+            <br>
+            Nombre del titular de la tarjeta: <input type="text" name="nombre" placeholder="Nombre del titular">
+            <br>
+            <br>
+            Numero de tarjeta: <input type="text" name="nombre" placeholder="0000 0000 0000 0000">
+            <br>
+            <br>
+            Fecha de caducidad: <input id="fecha" type="month" name="">
+            <br>
+            Código de seguridad: <input id="pago" type="text" name="nombre" placeholder="CVV">
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Envío y Facturación</legend>
+
+            Método de Envío: 
+            <br>
+                <input type="checkbox" name="Estándar" checked>Estándar          
+                <input type="checkbox" name="Express">Express
+                <input type="checkbox" name="Recogida en tienda">Recogida en tienda
+            <br>
+            <br>
+
+            Dirección de Envío: <input class="Cdatos" type="text" name="url" placeholder="Dirección de la calle" required>
+            <br>
+            <br>
+
+            Ciudad: <input class="Allado" type="text" name="Ciu" placeholder="Ciudad o población" required>
+            <br>
+            Provincia:<input class="Allado" type="text" name="Prov" placeholder="Provincia" spellcheck="true">
+            <br>
+            <br>
+
+            Código postal:<input class="Allado" type="text" name="CP" placeholder="00000" spellcheck="true">
+            <br>
+            Número de teléfono: <input class="Allado" type="tel" name="telefono" placeholder="Indique su numero de telefono" required >
+            <br>
+            <br>
+
+            Fecha y hora de entrega preferida:    
+            <input type="datetime-local" name="" id="">
+            <br>
+            <br>
+
+            ¿Necesita factura?
+            <br>
+            <input type="radio" name="fac" value="Si">Si
+            <input type="radio" name="fac" value="No">No
+            
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+        <legend>Tu opinion nos importa!</legend>
+
+        ¿Qué género de videojuegos prefieres?
+        <br>
+        <br>
+        <select id="multiple" name="Acción" id="multiple" multiple>
+            <optgroup label="Acción">
+                <option value="1" label="Aventura"></option>
+                <option value="2" label="Rol (RPG)"></option>
+                <option value="3" label="Estrategia"></option>
+                <option value="4" label="Deportes"></option>
+            </optgroup>
+
+            <optgroup label="Aventura">
+                <option value="1" label="Mundo abierto"></option>
+                <option value="2" label="Point-and-click"></option>
+                <option value="3" label="Narrativa"></option>
+            </optgroup>
+
+            <optgroup label="Deportes">
+                <option value="1" label="Fútbol"></option>
+                <option value="2" label="Baloncesto"></option>
+                <option value="3" label="Carreras"></option>
+                <option value="4" label="Extremos"></option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+
+        ¿Te gustan los juegos para un solo jugador o multijugador?
+        <br>
+        <input type="checkbox" name="Un jugador">Un jugador
+        <input type="checkbox" name="Multijugador">Multijugador
+        <br>
+        <br>
+
+        ¿Prefieres gráficos realistas o estilizados en los videojuegos?
+        <br>
+        <input type="checkbox" name="Realistas">Realistas
+        <input type="checkbox" name="Estilizados">Estilizados
+        <br>
+        <br>
+
+        ¿Tienes preferencias sobre la dificultad de los juegos?
+        <br>
+        <br>
+        <input type="checkbox" name="Fácil">Fácil
+        <br>
+        <input type="checkbox" name="Moderada">Moderada
+        <input type="checkbox" name="Difícil">Difícil
+        <br>
+        <br>
+        Evalua nuestra página web según tu grado de satisfacción:
+        <br>
+        <br>
+        <input type="range" min="1" max="100" step="3">
+
+        <br>
+        <br>
+        ¿Algún otro detalle importante sobre tus preferencias de videojuegos?
+        <br>
+        <br>
+        <textarea name="texto extenso" id="" spellcheck="true"></textarea>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            <br>
+            ¿Acepta nuestra política de privacidad? 
+            <br>
+            <br>
+            <input type="checkbox" name="SI" checked>SI
+            <br>
+            <input type="checkbox" name="NO">NO
+            <br>
+            Enlace a nuestra política de privacidad:
+            <a href="https://www.aepd.es/politica-de-privacidad-y-aviso">https://www.aepd.es/politica-de-privacidad-y-aviso</a>
+            <br>
+            <br>
+            Al hacer clic en enviar, acepta los términos y condiciones de nuestra tienda y confirma que toda la información proporcionada es precisa.
+            <br>
+            <br>
+            <input class="boton" type="submit" name="" id="" value="Enviar">
+            <input class="boton" type="reset" value="Eliminar">
+        </fieldset>
+        
+    </form>
+
+    
+    <br>
+    <br>
+    <h3>¡Gracias por elegir nuestra tienda! Procesaremos tu pedido lo antes posible.</h3>
+    <br>
+    <br>
+   </div>
+   <footer class="RRSS">
+    <a href="contacto.html"><img src="img/email.png"></a>
+    <a href="#" target="_blank"><img src="img/ig.png"></a>
+    <a href="#" target="_blank"><img src="img/facebook.png"></a>
+</footer>
+</body>
+</html>

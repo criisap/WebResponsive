@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- libreria iconos web https://ionic.io -->
+<script src="https://kit.fontawesome.com/0f7303ebba.js" crossorigin="anonymous"></script>
+<script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+<script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+<link rel="stylesheet" href="commonstyle.css">
+    <style>
+       
+
+        header{
+            
+            font-size: 0.9em;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: rgba(137, 66, 188, 0.638);
+            border-radius: 5px;
+            padding: 0 10px;
+            font-weight: 200;
+            text-align: center;
+            font-family: 'Retro';
+            color: white;
+            
+        }
+        header .logo:hover{
+           color:rgba(137, 66, 188, 0.625);
+           background: white;
+           transition: 1s;
+}
+        body{
+            background-image: url(img/back.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        img{
+            display: block;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            flex-wrap: wrap;
+        }
+        
+        .uno{
+            left: 00px;
+            top: 00px;
+        }
+        .dos{
+           left: 40px; 
+           top: 50px;
+        }
+        .tres{
+            left: 80px;
+            top: 100px;
+        }
+        .cuatro{
+            left: 120px;
+            top: 150px;
+        }
+        .cinco{
+            left: 160px;
+            top: 200px;
+        }
+        .seis{
+            left: 210px;
+            top: 250px;
+        }
+        .siete{
+            left: 2600px;
+            top: 300px;
+        }
+        .absolute:hover{
+            z-index:1;
+            transform: rotate(-3deg);
+        }
+        .absolute{
+            position: absolute;
+        }
+        div{
+            position: relative;
+        }
+        .caja{
+            width: 600px;
+            height: 600px;
+        }
+        .caja, .caja2{
+            display: inline-block;
+            width: 49%;
+            vertical-align: middle;
+            
+            text-transform: uppercase;
+            flex-wrap: wrap;
+        
+        }
+        h2{
+            background: rgb(81, 20, 81);
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 450px;
+             margin: 0 auto;
+             text-align: center;
+        }
+        h1{
+            position: relative;
+            color: rgb(255, 252, 255);
+            font-size: 3.5em;
+            max-width: 500px;
+            padding: 10px; 
+            
+            
+            
+        }
+        h2:hover{
+            background: white;
+            color: rgb(43, 2, 43);
+
+        }
+        .caja2{
+            position: relative;
+            max-width: 600px;
+            text-align: center;
+        }
+        .caja2 .h2{
+            font-size:2.5em;
+            text-transform:uppercase;
+            color: white;
+        }
+        .caja2 .h2 .span{
+            font-weight:600;
+            border-radius:20px;
+        }
+        /* redes sociales */
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10 100px 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.redesSociales li{
+    padding: 10px;
+}
+.redesSociales li a{
+    color: white;
+    font-size: 1.8em;
+    transition: 0.3s;
+}
+.redesSociales li:hover a{
+    color: rgb(137, 66, 188);
+}
+/* circulo */
+.circulo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(15, 72, 102, 0.937);
+    clip-path: circle(650px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+
+}
+
+footer.RRSS {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #010013ec; 
+    padding: 10px 0; /* Espacio alrededor del contenido */
+}
+
+footer img{
+    width: 60%;
+}
+/* ajustes para que la web sea responsive */
+@media screen and (max-width:576px) {
+    nav {
+        
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      }
+
+      h1{
+            position: relative;
+            color: rgb(255, 252, 255);
+            font-size: 2em;
+            max-width: 500px;
+            padding: 20px; 
+                
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            flex-wrap: wrap;
+        }
+
+        .caja{
+            width: 300px;
+            height: 300px;
+        }
+
+
+        .caja, .caja2{
+            display: inline-block;
+            width: 35%;
+            vertical-align: middle;
+            
+            text-transform: uppercase;
+            flex-wrap: wrap;
+    
+}
+    
+    
+}
+
+@media screen and (min-width:577px) and (max-width:768px){
+    /* nav {
+        
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      } */
+
+      h1{
+            position: relative;
+            color: rgb(255, 252, 255);
+            font-size: 3em;
+            max-width: 500px;
+            padding: 20px; 
+                
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            flex-wrap: wrap;
+        }
+
+        .caja{
+            width: 450px;
+            height: 450px;
+        }
+
+
+        .caja, .caja2{
+            display: inline-block;
+            width: 40%;
+            vertical-align: middle;
+            
+            text-transform: uppercase;
+            flex-wrap: wrap;
+    
+}
+
+}
+    
+
+
+    </style>
+   
+   <title>Publicaciones</title>
+</head>
+
+<body>
+    <nav>
+        <p class="logo"><img class="logo2" src="img/logo.png" alt=""></p>
+    
+        <ul class="ul1">
+            <li><a href="index.html">Home</a></li>
+            <li class="QuieneS"><a href="quienessomos.html">Quienes somos</a>
+                <ul class="ul2">
+                    <li class="Noticias">Noticias</li>
+                </ul>
+            </li>
+            <li class="AreaA"><a href="publicaciones.html">Áreas de actuación</a>
+                <ul class="ul2">
+                    <li class="Publicaciones">Publicaciones</li>
+                </ul>
+            </li>
+            <li class="Cto"><a href="Contacto.html">Contacto</a>
+                <ul class="ul2">
+                    <li class="Ubicacion">Ubicación</li>
+                </ul>
+            </li>
+            <li><a href="formulario.html"><i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </nav>
+     <header>
+    
+        <h1>ZONA GAMERS </h1>   
+    </header>
+    
+    <br>
+
+    <div class="caja">
+      <div class="uno absolute">
+           <img src="img/uno.jpg" alt="">
+      </div>
+      <div class="dos absolute">
+            <img src="img/dos.jpg" alt="">
+      </div>
+        <div class="tres absolute">
+             <img src="img/tres.jpg" alt="">
+     </div>
+     <div class="cuatro absolute">
+             <img src="img/cuatro.jpg" alt="">
+     </div>
+     <div class="cinco absolute">
+            <img src="img/cinco.jpg" alt="">
+    </div>
+    <div class="seis absolute">
+             <img src="img/siete.jpg" alt="">
+    </div>
+
+</div>
+<aside class="caja2">
+    <h2>
+        NUESTRAS ARCADE ONLINE
+    </h2>
+    <h2>
+     <span> Juega con nosotros</span>
+    </h2>
+</aside>
+</body>
+<footer class="RRSS">
+    <a href="contacto.html"><img src="img/email.png"></a>
+    <a href="#" target="_blank"><img src="img/ig.png"></a>
+    <a href="#" target="_blank"><img src="img/facebook.png"></a>
+</footer>
+</html> 

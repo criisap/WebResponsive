@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+/* He escogido dos tipos de fuente, la primera la he utilizado
+en el menú de la cabecera y la segunda en los nombres de los videojuegos */
+
+/* @font-face {
+    font-family: 'Retro';
+    src: url(img/RETROTECH.ttf);
+}
+
+@font-face {
+    font-family: 'Robot';
+    src: url(img/RobotoMono-VariableFont_wght.ttf);
+}  */
+
+/* contenido de la página HOME */
+
+/* Section con width y margin */
+.contenido{
+    width: 100%;
+    margin: 0 auto;
+}
+/* Editamos el container de las categorias */
+.container{
+    width: 90%;
+    margin: 5% auto;
+}
+/* Las categorias son las lineas en las que estan distribuidas los videojuegos 
+(novedades, TopVentas, Proximamente, mucho más */
+ .categoria{
+    margin-top: 1%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+/* Primer cuadro de la fila, contiene el titulo de la fila */
+.title{
+    position: relative;
+    display: inline-block;
+    background-color:#200930 ;
+    width: 120px;
+    height: 120px;
+}
+/* cuadro de la fila con imágenes */
+.uno{
+    position: relative;
+    display: inline-block; 
+    width: 120px;
+    height:120px ;
+}
+img{
+    position: relative;
+    width: 100%;
+    height:100%;
+    transition: opacity 0.3 ease;
+}
+/* centramos el nombre de los videojuegos en el centro de la imagen poniedo al 50% 
+en todas las dimensiones top,left, x,y */
+.title p, .uno p, h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Agregamos la fuente a la úlyima categoria "mucho mas" y centramos el texto */
+.uno .mas{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* font-family: 'Retro'; */
+}
+/* HOVER en las categorias */
+p {
+    color: aqua;
+}
+h4 {
+    color: rgb(220, 102, 220);
+}
+.uno p{
+    display: none;
+    transition: 0.4 ease;
+}
+.title:hover{
+    background-color: #48156C;
+} 
+.uno:hover img:hover{
+    transform: scale(1.2);
+    opacity: 0.7;
+    z-index: 5;
+}
+.uno:hover .mas{
+    background-color: #200930;
+    border-radius: 10px;
+    z-index: 5;
+}
+.uno:hover p{
+    display: block;
+    background-color: #20093092;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+footer.RRSS {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #010013ec; 
+    padding: 10px; /* Espacio alrededor del contenido */
+}
+
+footer img{
+    width: 60%;
+}
+@media screen and (max-width:576px) {
+    body{
+        background-image: none;
+        background-color: #1b072a;
+    }
+    nav{
+        
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    
+    .title, .title p{
+        background-color:#48156C;
+    }
+        .categoria, .categoria1, .categoria2, .categoria3{
+    
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .uno p {
+            display: block;
+            transition: 0.4 ease;
+            /* font-family: 'Robot'; */
+        }
+        .title p, .uno p, h4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* font-family: 'Retro'; */
+        }
+        
+        .uno p, h4{
+            background-color: #20093092;
+            border-radius: 10px;
+        }
+        .mas{
+            background-color: #1c082b;
+        }
+    }
+
+    @media screen and (min-width:577px) and (max-width:764px) {
+        .uno p {
+            display: block;
+            transition: 0.4 ease;
+            /* font-family: 'Robot'; */
+        }
+        .title p, .uno p, h4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* font-family: 'Retro'; */
+        }
+        
+        .uno p, h4{
+            background-color: #20093092;
+            border-radius: 10px;
+        }
+        .mas{
+            background-color: #1c082b;
+        }
+    }
+    
